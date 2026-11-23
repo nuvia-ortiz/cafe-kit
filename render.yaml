@@ -1,0 +1,15 @@
+# Demo deploy on Render's free plan: Render → New → Blueprint → pick this repository.
+# No external database: each start creates a fresh SQLite file and loads the demo cafés,
+# so the public demo never fills up with visitors' edits. For a real café, attach a disk at /app/data
+# (or set DATABASE_URL to a libSQL/Turso database) and set SEED_DEMO=false.
+services:
+  - type: web
+    name: cafe-kit
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /entrar
+    autoDeploy: true
+    envVars:
+      - key: SEED_DEMO
+        value: "true"

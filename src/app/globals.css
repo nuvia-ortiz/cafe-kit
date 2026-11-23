@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Public-site tokens: every café sets these from its theme (see src/lib/theme.ts → themeVars). */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ground: var(--c-ground);
+  --color-surface: var(--c-surface);
+  --color-ink: var(--c-ink);
+  --color-muted: var(--c-muted);
+  --color-line: var(--c-line);
+  --color-accent: var(--c-accent);
+  --color-on-accent: var(--c-on-accent);
+  --color-accent2: var(--c-accent2);
+  --color-on-accent2: var(--c-on-accent2);
+  --color-soft: var(--c-soft);
+  --radius-btn: var(--r-btn);
+  --radius-card: var(--r-card);
+  --font-display: var(--f-display);
+  --font-body: var(--f-body);
+  --font-sans: var(--font-inter), system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Panel tokens: one calm admin look, independent of the café's style. */
+:root {
+  --p-bg: #f3f4f6;
+  --p-card: #ffffff;
+  --p-ink: #1a1d23;
+  --p-muted: #59606d;
+  --p-line: #e3e5ea;
+  --p-brand: #1f4e8c;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+  }
 }
