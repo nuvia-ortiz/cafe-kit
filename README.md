@@ -4,6 +4,8 @@ A website template for small cafés that each owner customises from their own pa
 
 Built for cafés in Cuba (prices in CUP, payments by Transfermóvil and EnZona, a "power cut" notice), but nothing is tied to one business: one install serves many cafés, each with its own address, owner account and style.
 
+**Live demo:** https://cafe-kit.onrender.com/c/cafeteria-de-barrio (panel at `/entrar`, accounts below; the free plan sleeps after 15 minutes idle, so the first load can take up to a minute).
+
 > **Español:** plantilla de web para cafeterías con carta QR, pedidos por WhatsApp/Telegram/llamada y un panel con login donde cada dueño cambia la carta, los precios, el estilo y el orden de su web sin saber programar.
 
 <p>
