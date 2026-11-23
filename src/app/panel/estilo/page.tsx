@@ -13,7 +13,7 @@ export default async function EstiloPage() {
   return (
     <>
       <PageHead title="Estilo de la web" desc="Elige un punto de partida y ajústalo hasta que sea tuyo. La vista previa es tu web real." />
-      <StyleEditor key={cafe.updatedAt} cafe={toStoreCafe(cafe)} menu={await storeMenu(cafeId)} />
+      <StyleEditor key={cafe.id} cafe={toStoreCafe(cafe)} menu={await storeMenu(cafeId)} />
     </>
   );
 }

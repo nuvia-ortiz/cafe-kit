@@ -52,18 +52,20 @@ test("the panel is closed to anonymous visitors", async ({ page }) => {
   expect(res.status()).toBe(401);
 });
 
-test("owner changes a price and marks a product as sold out", async ({ page }) => {
+test("owner changes a price and marks a product as sold out", async ({ page }, info) => {
   await login(page, "dueno@demo.local");
   await page.getByRole("link", { name: "Carta y precios" }).click();
   const price = page.getByLabel("Precio de Colada");
-  await price.fill("130");
+  // A retry runs on the same database, so it needs a price that isn't saved yet.
+  const value = String(130 + info.retry * 5);
+  await price.fill(value);
   await price.press("Enter");
   await expect(page.getByTestId("product-Colada").getByRole("status")).toHaveText("✓");
   await page.getByRole("switch", { name: "Flan: hoy hay" }).click();
   await expect(page.getByRole("switch", { name: "Flan: hoy hay" })).toHaveAttribute("aria-checked", "false");
 
   await page.goto("/c/cafeteria-de-barrio");
-  await expect(page.locator("#carta li", { hasText: "Colada" })).toContainText("130 CUP");
+  await expect(page.locator("#carta li", { hasText: "Colada" })).toContainText(`${value} CUP`);
   await expect(page.locator("#carta li", { hasText: "Flan" })).toContainText("Hoy no hay");
 });
 

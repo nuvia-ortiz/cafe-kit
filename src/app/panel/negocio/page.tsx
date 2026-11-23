@@ -14,7 +14,7 @@ export default async function NegocioPage() {
       <PageHead title="Mi negocio" desc="Datos que ven tus clientes y cómo te hacen los pedidos." />
       <div className="grid gap-4 xl:grid-cols-[1fr_340px]">
         <BusinessForm
-          key={c.updatedAt}
+          key={c.id}
           cafe={{
             name: c.name, tagline: c.tagline, about: c.about, address: c.address, mapUrl: c.mapUrl, hours: c.hours,
             whatsapp: c.whatsapp, telegram: c.telegram, phone: c.phone, channels: c.channels, payments: c.payments,
