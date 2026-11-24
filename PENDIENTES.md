@@ -8,7 +8,7 @@ Revisado el 23-nov-2026.
 
 ## Lo que falta
 1. **Rellenar el campo «Website» del repositorio** en GitHub con la URL de la demo. Hoy está vacío.
-2. **Añadir una sección «Roadmap» al README**, como en VetSheet y Snagkit.
+2. **Añadir una sección «Roadmap» al README**, como en VetMa y Snagkit.
 3. **Precios de ejemplo de la demo:** son orientativos y no se han validado con precios reales de cafeterías.
 4. **Guía para un café real**, paso a paso: disco persistente o `DATABASE_URL`, `SEED_DEMO=false`, `ADMIN_EMAIL` y `ADMIN_PASSWORD`, `PUBLIC_URL`. Hoy está resumido en la sección *Deploy*.
 5. **Las imágenes se guardan en la base de datos.** Vale para una demo; con muchas cafeterías conviene pasarlas a almacenamiento de archivos.
