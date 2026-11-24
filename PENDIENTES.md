@@ -17,3 +17,7 @@ Revisado el 23-nov-2026.
 ## Ideas (sin compromiso)
 - Estadísticas por producto (más pedidos), además de las de QR frente a enlace.
 - Servir de base para la web mínima del proyecto «Qué Hay Hoy».
+
+## Diseño en Figma
+- Archivo público de solo lectura con las pantallas reales como capas editables (24-nov-2026): https://www.figma.com/design/FjeMagWLgelsnHoSxjpqZV/Cafe-Kit-Diseno-de-la-web
+- Enlazado en el README y en la web portfolio.

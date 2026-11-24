@@ -6,6 +6,8 @@ Built for cafés in Cuba (prices in CUP, payments by Transfermóvil and EnZona, 
 
 **Live demo:** https://cafe-kit.onrender.com/c/cafeteria-de-barrio (panel at `/entrar`, accounts below; the free plan sleeps after 15 minutes idle, so the first load can take up to a minute).
 
+**Figma file:** [the site and the owner panel as editable Figma layers](https://www.figma.com/design/FjeMagWLgelsnHoSxjpqZV/Cafe-Kit-Diseno-de-la-web) (view-only).
+
 > **Español:** plantilla de web para cafeterías con carta QR, pedidos por WhatsApp/Telegram/llamada y un panel con login donde cada dueño cambia la carta, los precios, el estilo y el orden de su web sin saber programar.
 
 <p>
